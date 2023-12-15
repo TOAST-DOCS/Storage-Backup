@@ -1,5 +1,12 @@
 ## Storage > Backup > Release Notes
 
+### November 28, 2023
+#### Added Features
+* Added a feature to stop/resume backup plan
+#### Feature Updates
+* Improved retrieval of backup results
+    * You can check backup history, including folders and files in the backup path from the console
+
 ### October 31, 2023
 #### Feature Updates
 * Changed the destination for backup result mail (Tokyo region excluded)
