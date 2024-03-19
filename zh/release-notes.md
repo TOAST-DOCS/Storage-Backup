@@ -1,10 +1,15 @@
 ## Storage > Backup > Release Notes
 
+### February 27, 2024
+#### Added Features
+* Added notification mail recipient settings (Tokyo region excluded)
+    * Added the feature to set email recipient address in Organization/Project Dashboard > Manage Notifications.
+
 ### November 28, 2023
 #### Added Features
-* Added a feature to stop/resume backup plan
+* Added a feature to stop/resume backup plan (Tokyo region excluded)
 #### Feature Updates
-* Improved retrieval of backup results
+* Improved retrieval of backup results (Tokyo region excluded)
     * You can check backup history, including folders and files in the backup path from the console
 
 ### October 31, 2023
