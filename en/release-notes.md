@@ -1,24 +1,33 @@
 ## Storage > Backup > Release Notes
 
+### July 23, 2024
+#### Added Features
+* Added a feature to download all backup files
+    * Excluded Japan (Tokyo) region
+
 ### February 27, 2024
 #### Added Features
-* Added notification mail recipient settings (Tokyo region excluded)
+* Added notification mail recipient settings 
     * Added the feature to set email recipient address in Organization/Project Dashboard > Manage Notifications.
+    * Excluded Japan (Tokyo) region
 
 ### November 28, 2023
 #### Added Features
-* Added a feature to stop/resume backup plan (Tokyo region excluded)
+* Added a feature to stop/resume backup plan
+    * Excluded Japan (Tokyo) region
 #### Feature Updates
-* Improved retrieval of backup results (Tokyo region excluded)
+* Improved retrieval of backup results 
     * You can check backup history, including folders and files in the backup path from the console
+    * Excluded Japan (Tokyo) region
 
 ### October 31, 2023
 #### Feature Updates
-* Changed the destination for backup result mail (Tokyo region excluded)
+* Changed the destination for backup result mail
     * AS-IS
         * All project members with permissions in the project
     * TO-BE
         * Project members with Backup Admin permission among their project permissions
+        * Excluded Japan (Tokyo) region
 
 ### August 25, 2020
 * New region opened in Korea (Pyeongchon)
