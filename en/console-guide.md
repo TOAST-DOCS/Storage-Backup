@@ -142,7 +142,7 @@ Multiple backup plans can be added to one server. Backup plan can be added even 
 > **If 1TB or more of bulk data** or **1 million or more of numbers of files are exceeded**when backing up, more than 3 hours can be spent, leading to backup failure.
 > We recommend that you back up in serial order by dividing the paths if a backup path exceeds a standard amount.
 > For directories with many files, it is recommended to backup by compressing the files.
-> In case of NAS (offline) product data or large-capacity data backup, contact the customer center.
+> In case of NAS (offline) service data or large-capacity data backup, contact the customer center.
 
 * **Backup Paths**
 
