@@ -190,7 +190,7 @@ Click the backup path in the backup plan list to view the backup result. Backup 
 
 > [Note]
 > If a backup is not done within three hours, due to network status, volume of backup data, and lots of backup schedule configured to start all at once, it will be recorded as a failure.
-> Backup plans to ontinuously update directories can fail.
+> Backup plans to continuously update directories can fail.
 
 <br/>
 
