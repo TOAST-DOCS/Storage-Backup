@@ -55,10 +55,10 @@ tcbackup install {user-domain}
 
 * **Windows**
 
-For Windows agent, download from [Downloads of TOAST](https://docs.toast.com/en/Download) and install. MC Server and MC Domain are required for installation: MC Domain refers to user's domain information and MC Server requires the following:  
+For Windows agent, download from [Downloads of TOAST](https://docs.toast.com/en/Download) and install. MC Server and MC Domain are required for installation: MC Domain refers to user's domain information and MC Server requires the following:
 
 ```
-MC Server : tc0backup0.toastmaker.net
+MC Server : tc0backup2.toastmaker.net
 ```
 
 <br/>
@@ -157,12 +157,12 @@ Retention period for backed up copies: choose one of 7 days, 14 days, 21 days, 3
 <br/>
 
 ### List of Backup Paths
-Check the server name on the left of the server list, and backup paths of the selected server will be listed at the bottom of the page.   
+Check the server name on the left of the server list, and backup paths of the selected server will be listed at the bottom of the page.
 
 <br/>
 
 ### Retrieve Results
-Click a backup path on the list to retrieve the result of backup, which is collected within an hour to the latest, after backup completion time.  
+Click a backup path on the list to retrieve the result of backup, which is collected within an hour to the latest, after backup completion time.
 
 | Backup Result             | Description                                                  |
 | ------------------------- | ------------------------------------------------------------ |
@@ -187,7 +187,7 @@ If a registered backup path has been backed up more than once, restoration of da
 
 * **Backup Path**
 
-User can select one of the added backup paths.   
+User can select one of the added backup paths.
 
 <br/>
 
@@ -199,7 +199,7 @@ Select a date when a copy to restore was backed up. When there is no backup data
 
 * **Requests**
 
-Feel free to request for details required for restoration. Restoration can be made to the backup server, or to a new server.  
+Feel free to request for details required for restoration. Restoration can be made to the backup server, or to a new server.
 
 ```
 e.g)
