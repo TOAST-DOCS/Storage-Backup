@@ -141,7 +141,8 @@ Multiple backup plans can be added to one server. Backup plan can be added even 
 > So as to not put a strain on the server, backup is conducted slowly in the background.
 > **If 1TB or more of bulk data** or **1 million or more of numbers of files are exceeded**when backing up, more than 3 hours can be spent, leading to backup failure.
 > We recommend that you back up in serial order by dividing the paths if a backup path exceeds a standard amount.
-> In case of NAS(offline) product data or large-capacity data backup, we recommend that you contact the customer service center.
+> For directories with many files, it is recommended to backup by compressing the files.
+> In case of NAS (offline) service data or large-capacity data backup, contact the customer center.
 
 * **Backup Paths**
 
@@ -189,7 +190,7 @@ Click the backup path in the backup plan list to view the backup result. Backup 
 
 > [Note]
 > If a backup is not done within three hours, due to network status, volume of backup data, and lots of backup schedule configured to start all at once, it will be recorded as a failure.
->
+> Backup plans to continuously update directories can fail.
 
 <br/>
 
