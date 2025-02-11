@@ -1,5 +1,10 @@
 ## Storage > Backup > Release Notes
 
+### February 11, 2025
+#### Added Features
+* Add a 3-month (90-day) retention period option to the backup plan
+    * Excluded Japan (Tokyo) region
+    
 ### July 23, 2024
 #### Added Features
 * Added a feature to download all backup files
