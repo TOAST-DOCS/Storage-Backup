@@ -20,14 +20,9 @@ To register a backup server, agent must be installed in the server. User's domai
 
 To communicate with the backup server, add the following to the server security group.
 
-| Direction | Port | Region | CIDR |
-| --- | --- | --- | --- |
-| Ingress/Egress | ALL TCP | KOREA (Pangyo) | 133.186.132.0/24 |
-| | | KOREA (Pyeongchon) | 133.186.207.4/32, 133.186.207.5/32 |
-| | | JAPAN (Tokyo) | 133.223.17.0/24 |
-| Egress | 443 | KOREA (Pangyo) | 103.243.202.188/32 |
-| | | KOREA (Pyeongchon) | 103.243.202.188/32 |
-| | | JAPAN (Tokyo) | 119.235.231.50/32 |
+| Direction | Port | CIDR |
+| --- | --- | --- |
+| Ingress/Egress | ALL TCP | 211.180.235.123/32<br/>211.180.235.124/32<br/>211.180.235.106/32<br/>211.180.235.122/32 |
 
 <br/>
 
@@ -35,14 +30,8 @@ To communicate with the backup server, add the following to the server security 
 
 * **Linux**
 
-| Region | URL |
-| --- | --- |
-| KOREA (Pangyo) | https://static.toastoven.net/toastcloud/sdk_download/backup/scripts/linux/bootstrap.sh |
-| KOREA (Pyeongchon) | https://static.toastoven.net/toastcloud/sdk_download/backup/kr2/scripts/linux/bootstrap.sh |
-| JAPAN (Tokyo) | https://static.toastoven.net/toastcloud/sdk_download/backup/jp/scripts/linux/bootstrap.sh |
-
 ```
-curl {URL} | bash
+curl https://static.toastoven.net/toastcloud/sdk_download/gov-backup/scripts/linux/bootstrap.sh | bash
 ```
 
 <br/>
@@ -66,13 +55,11 @@ tcbackup install {user-domain}
 
 * **Windows**
 
-For Windows agent, download from [Downloads of NHN Cloud](https://docs.toast.com/en/Download) and install. MC Server and MC Domain are required for installation: MC Domain refers to user's domain information and MC Server requires the following:  
+For Windows agent, download from [Downloads of TOAST](https://docs.toast.com/en/Download) and install. MC Server and MC Domain are required for installation: MC Domain refers to user's domain information and MC Server requires the following:
 
-| Region | MC Server |
-| --- | --- |
-| KOREA (Pangyo) | tcbackup1.toastmaker.net |
-| KOREA (Pyeongchon) | kr2-backup-mc1.cloud.toast.com |
-| JAPAN (Tokyo) | tcbackup.nhn-japan.com |
+```
+MC Server : tc0backup2.toastmaker.net
+```
 
 <br/>
 
@@ -91,7 +78,9 @@ tcbackup re-register
 
 Download and execute the PowerShell script as below.
 
-[re-register.ps1](https://static.toastoven.net/toastcloud/sdk_download/backup/scripts/windows/re-register.ps1)
+```
+https://static.toastoven.net/toastcloud/sdk_download/backup/scripts/windows/re-register.ps1
+```
 
 <br/>
 
@@ -134,15 +123,8 @@ Install agent in the backup server and select a server in which agent is registe
 
 <br/>
 
-### Add Backup Plan
-Multiple backup plans can be added to one server. Backup plan can be added even after completing the server registration.
-
-> [Caution]
-> So as to not put a strain on the server, backup is conducted slowly in the background.
-> **If 1TB or more of bulk data** or **1 million or more of numbers of files are exceeded**when backing up, more than 3 hours can be spent, leading to backup failure.
-> We recommend that you back up in serial order by dividing the paths if a backup path exceeds a standard amount.
-> For directories with many files, it is recommended to backup by compressing the files.
-> In case of NAS (offline) service data or large-capacity data backup, contact the customer center.
+### Add Backup Paths
+Many backup paths can be added to a server: adding paths is available after server registration is completed.
 
 * **Backup Paths**
 
@@ -174,38 +156,38 @@ Retention period for backed up copies: choose one of 7 days, 14 days, 21 days, 3
 
 <br/>
 
-### Backup Plan List
-Select the checkbox to the left of the server name in the server list and a list of backup plans for the selected server is displayed on the details screen at the bottom of the screen.
+### List of Backup Paths
+Check the server name on the left of the server list, and backup paths of the selected server will be listed at the bottom of the page.
 
 <br/>
 
 ### Retrieve Results
-Click the backup path in the backup plan list to view the backup result. Backup results are aggregated within a maximum of one hour from the time of backup completion.
+Click a backup path on the list to retrieve the result of backup, which is collected within an hour to the latest, after backup completion time.
 
-| Backup Result  | Description |
-| --- | --- |
-| Successful | Backup succeeded |
+| Backup Result             | Description                                                  |
+| ------------------------- | ------------------------------------------------------------ |
+| Successful                | Backup succeeded                                             |
 | Successful (with caution) | Backup is completed, but original file has changed during backup |
-| Failed  | Backup failed |
+| Failed                    | Backup failed                                                |
 
 > [Note]
 > If a backup is not done within three hours, due to network status, volume of backup data, and lots of backup schedule configured to start all at once, it will be recorded as a failure.
-> Backup plans to continuously update directories can fail.
+>
 
 <br/>
 
 ### Change of Backup Policy
 
-Change the backup plan by clicking the **Change** button to the right of each item in the backup plan list. The items that can be changed are the `backup cycle`, `backup time`, and `retention cycle`.
+Click **Change** on the right of each item from the list of backup paths to change backup policy: items available to change are `Backup Cycle`, `Backup Time`, `Retention Cycle`.
 
 <br/>
 
 ## Apply for Restoration
-If the registered backup plan has been conducted more than once, the data can be requested for recovery.
+If a registered backup path has been backed up more than once, restoration of data can be applied.
 
 * **Backup Path**
 
-User can select one of the added backup paths.   
+User can select one of the added backup paths.
 
 <br/>
 
@@ -217,11 +199,11 @@ Select a date when a copy to restore was backed up. When there is no backup data
 
 * **Requests**
 
-Feel free to request for details required for restoration. Restoration can be made to the backup server, or to a new server.  
+Feel free to request for details required for restoration. Restoration can be made to the backup server, or to a new server.
 
 ```
 e.g)
-Hostname of the server to recover  : backup.guide
+Host name of the server to recover  : backup.guide
 Path to recover : /home/debian
 ```
 
@@ -233,12 +215,11 @@ Enter contact information to serve as a dialogue channel between administrator a
 
 Restoration status is displayed as below:
 
-| Status | Description |
-| --- | --- |
-| Received | Application for restoration has been received. |
-| Processing | Operator started restoration. |
-| Completed  | Restoration has been completed. |
-
+| Status     | Description                                    |
+| ---------- | ---------------------------------------------- |
+| Received   | Application for restoration has been received. |
+| Processing | Operator started restoration.                  |
+| Completed  | Restoration has been completed.                |
 
 <br/>
 

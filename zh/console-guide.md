@@ -200,27 +200,45 @@ Change the backup plan by clicking the **Change** button to the right of each it
 
 <br/>
 
-## Restoration
-If the registered backup plan has been conducted more than once, backup results will be generated, and one of the generated backup results can be selected to proceed with restoration.
-
-<br/>
+## Apply for Restoration
+If the registered backup plan has been conducted more than once, the data can be requested for recovery.
 
 * **Backup Path**
 
-User can select the path of the backup result or specific paths.
+User can select one of the added backup paths.   
 
 <br/>
 
-* **Storage server**
+* **Backup Date**
 
-The server to store the data can be selected from the servers registered as backup agents.
+Select a date when a copy to restore was backed up. When there is no backup data since all has failed, message will show there is no data to restore.
 
 <br/>
 
-* **Storage path**
+* **Requests**
 
-The restoration path can be specified. If the entered path does not exist, it will be automatically created for the restoration.
-If the same data already exists in the specified path, it will be overwritten during the restoration process.
+Feel free to request for details required for restoration. Restoration can be made to the backup server, or to a new server.  
+
+```
+e.g)
+Hostname of the server to recover  : backup.guide
+Path to recover : /home/debian
+```
+
+<br/>
+
+* **Contact**
+
+Enter contact information to serve as a dialogue channel between administrator and requester for flawless restoration. Collected personal information will not be saved, to be immediately discarded when restoration is completed.
+
+Restoration status is displayed as below:
+
+| Status | Description |
+| --- | --- |
+| Received | Application for restoration has been received. |
+| Processing | Operator started restoration. |
+| Completed  | Restoration has been completed. |
+
 
 <br/>
 
