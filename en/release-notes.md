@@ -1,6 +1,6 @@
 ## Storage > Backup > Release Notes
 
-### July 29, 2025
+### September 23, 2025
 #### Feature Updates
 * Changed to automated backup restoration
     * Excluded Japan (Tokyo) region
@@ -37,7 +37,7 @@
         * All project members with permissions in the project
     * TO-BE
         * Project members with Backup Admin permission among their project permissions
-        * Excluded Japan (Tokyo) region
+    * Excluded Japan (Tokyo) region
 
 ### August 25, 2020
 * New region opened in Korea (Pyeongchon)
