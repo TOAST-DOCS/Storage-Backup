@@ -36,8 +36,9 @@ NHN Cloud supports the following operating systems:
 | Windows Server | x64 | 2012 R2 STD<br/>2016 STD<br/>2019 STD | NTFS |
 
 ## Restoration
-Restoration is performed by selecting one of the backup results. You can restore all data or choose specific paths.
-The server to store the data can be selected from the servers registered as backup agents, and the restoration path can be specified as desired.
+Select one of the backup results from the original server to restore. You can restore the entire backup or select a specific path.
+The restore target server can be selected from among the servers with the backup agent installed, and must be a server with the same OS family (Linux or Windows) as the restore source server.
+You can specify the save path you want. If the entered path does not exist, it will be automatically created and then restored.
 
 ## Charges
 When a server is registered, a basic monthly fee is charged. Additional fees apply based on the number of registered servers, storage usage, and the size of restored data. The default specification for the monthly subscription includes two servers and 100 GB of storage usage.

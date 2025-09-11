@@ -211,16 +211,17 @@ User can select the path of the backup result or specific paths.
 
 <br/>
 
-* **Storage server**
+* **Restore Target Server**
 
-The server to store the data can be selected from the servers registered as backup agents.
+You can choose from servers that have backup agents installed.
+You must select a server with the same OS family (Linux or Windows) as the restore source server.
 
 <br/>
 
-* **Storage path**
+* **Storage Path**
 
-The restoration path can be specified. If the entered path does not exist, it will be automatically created for the restoration.
-If the same data already exists in the specified path, it will be overwritten during the restoration process.
+The path can be specified as you want. If the entered path does not exist, it will be automatically created for the restoration.
+If the same data already exists in the specified path, the restored data is saved in an overwrite manner.
 
 <br/>
 
