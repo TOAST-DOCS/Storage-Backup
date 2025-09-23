@@ -35,8 +35,10 @@ NHN Cloud supports the following operating systems:
 | Rocky | x64 | 8.5 | xfs |
 | Windows Server | x64 | 2012 R2 STD<br/>2016 STD<br/>2019 STD | NTFS |
 
-## Application Procedure for Restoration
-Once the user applies for restoration, the operator confirms the application and proceeds with the restoration. For smooth processing, the operator may contact you. The restoration application process is as follows:
+## Restoration
+Select one of the backup results from the original server to restore. You can restore the entire backup or select a specific path.
+The restore target server can be selected from among the servers with the backup agent installed, and must be a server with the same OS family (Linux or Windows) as the restore source server.
+You can specify the save path you want. If the entered path does not exist, it will be automatically created and then restored.
 
 1. Select a server to restore.
 2. Click **Apply for Restoration** in the **Restoration** tab.

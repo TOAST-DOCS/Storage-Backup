@@ -215,9 +215,10 @@ Select a date when a copy to restore was backed up. When there is no backup data
 
 <br/>
 
-* **Requests**
+* **Restore Target Server**
 
-Feel free to request for details required for restoration. Restoration can be made to the backup server, or to a new server.  
+You can choose from servers that have backup agents installed.
+You must select a server with the same OS family (Linux or Windows) as the restore source server.
 
 ```
 e.g)
@@ -227,9 +228,10 @@ Path to recover : /home/debian
 
 <br/>
 
-* **Contact**
+* **Storage Path**
 
-Enter contact information to serve as a dialogue channel between administrator and requester for flawless restoration. Collected personal information will not be saved, to be immediately discarded when restoration is completed.
+The path can be specified as you want. If the entered path does not exist, it will be automatically created for the restoration.
+If the same data already exists in the specified path, the restored data is saved in an overwrite manner.
 
 Restoration status is displayed as below:
 

@@ -1,5 +1,10 @@
 ## Storage > Backup > Release Notes
 
+### September 23, 2025
+#### Feature Updates
+* Changed to automated backup restoration
+    * Excluded Japan (Tokyo) region
+
 ### February 11, 2025
 #### Added Features
 * Add a 3-month (90-day) retention period option to the backup plan
@@ -32,7 +37,7 @@
         * All project members with permissions in the project
     * TO-BE
         * Project members with Backup Admin permission among their project permissions
-        * Excluded Japan (Tokyo) region
+    * Excluded Japan (Tokyo) region
 
 ### August 25, 2020
 * New region opened in Korea (Pyeongchon)
