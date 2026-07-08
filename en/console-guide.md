@@ -69,7 +69,7 @@ tcbackup install {user-domain}
 
 * **Windows**
 
-For Windows agent, download from [Downloads of NHN Cloud](https://docs.toast.com/en/Download) and install. MC Server and MC Domain are required for installation: MC Domain refers to user's domain information and MC Server requires the following:  
+For Windows agent, download from [Downloads of NHN Cloud](https://docs.nhncloud.com/en/Download) and install. MC Server and MC Domain are required for installation: MC Domain refers to user's domain information and MC Server requires the following:  
 
 | Region | MC Server |
 | --- | --- |
