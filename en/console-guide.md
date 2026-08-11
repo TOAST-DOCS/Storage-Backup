@@ -1,6 +1,10 @@
-## Storage > Backup > Console Guide
+<!-- pre-align:aligned sig=bccd9bb799be -->
 
-## Backup Agent
+<a id="storage-backup-console-guide"></a>
+## Storage > Backup > Console Guide { #storage-backup-console-guide }
+
+<a id="backup-agent"></a>
+## Backup Agent { #backup-agent }
 To register a backup server, agent must be installed in the server. User's domain information is required to install an agent: check domain information on the **Register Server** page.
 
 * User's domain
@@ -16,7 +20,8 @@ To register a backup server, agent must be installed in the server. User's domai
 
 <br/>
 
-### Security Group Configuration
+<a id="security-group-configuration"></a>
+### Security Group Configuration { #security-group-configuration }
 
 To communicate with the backup server, add the following to the server security group.
 
@@ -33,7 +38,8 @@ To communicate with the backup server, add the following to the server security 
 
 <br/>
 
-### Install Backup CLI
+<a id="install-backup-cli"></a>
+### Install Backup CLI { #install-backup-cli }
 
 * **Linux**
 
@@ -50,7 +56,8 @@ curl {URL} | bash
 
 <br/>
 
-### Install Backup Agent
+<a id="install-backup-agent"></a>
+### Install Backup Agent { #install-backup-agent }
 
 > [Caution]
 > Backup registers a server with the hostname of the server where the agent is installed.
@@ -80,7 +87,8 @@ For Windows agent, download from [Downloads of NHN Cloud](https://docs.toast.com
 
 <br/>
 
-### Re-register Backup Agent
+<a id="re-register-backup-agent"></a>
+### Re-register Backup Agent { #re-register-backup-agent }
 If the hostname of backup server has changed, agent needs to be re-registered. Here's the command:
 
 * **Linux**
@@ -99,7 +107,8 @@ Download and execute the PowerShell script as below.
 
 <br/>
 
-### Close Backup Agent
+<a id="close-backup-agent"></a>
+### Close Backup Agent { #close-backup-agent }
 To suspend backup for a while, you can close an agent.
 
 * **Linux**
@@ -116,7 +125,8 @@ Right-click the backup agent icon in the system tray and press **Close**.
 
 <br/>
 
-### Restart Backup Agent
+<a id="restart-backup-agent"></a>
+### Restart Backup Agent { #restart-backup-agent }
 To restart the closed backup agent, use the following command:
 
 * **Linux**
@@ -133,12 +143,14 @@ Execute **EMC Avamar > Client** on the start menu.
 
 <br/>
 
-## Register Server
+<a id="register-server"></a>
+## Register Server { #register-server }
 Install agent in the backup server and select a server in which agent is registered from **Select Server** in **Register Server**.
 
 <br/>
 
-### Add Backup Plan
+<a id="add-backup-plan"></a>
+### Add Backup Plan { #add-backup-plan }
 Multiple backup plans can be added to one server. Backup plan can be added even after completing the server registration.
 
 > [Caution]
@@ -178,12 +190,14 @@ Retention period for backed up copies: choose one of 7 days, 14 days, 21 days, 3
 
 <br/>
 
-### Backup Plan List
+<a id="backup-plan-list"></a>
+### Backup Plan List { #backup-plan-list }
 Select the checkbox to the left of the server name in the server list and a list of backup plans for the selected server is displayed on the details screen at the bottom of the screen.
 
 <br/>
 
-### Retrieve Results
+<a id="retrieve-results"></a>
+### Retrieve Results { #retrieve-results }
 Click the backup path in the backup plan list to view the backup result. Backup results are aggregated within a maximum of one hour from the time of backup completion.
 
 | Backup Result  | Description |
@@ -198,13 +212,15 @@ Click the backup path in the backup plan list to view the backup result. Backup 
 
 <br/>
 
-### Change of Backup Policy
+<a id="change-of-backup-policy"></a>
+### Change of Backup Policy { #change-of-backup-policy }
 
 Change the backup plan by clicking the **Change** button to the right of each item in the backup plan list. The items that can be changed are the `backup cycle`, `backup time`, and `retention cycle`.
 
 <br/>
 
-## Restoration
+<a id="restoration"></a>
+## Restoration { #restoration }
 If the registered backup plan has been conducted more than once, backup results will be generated, and one of the generated backup results can be selected to proceed with restoration.
 
 <br/>
@@ -229,7 +245,8 @@ If the same data already exists in the specified path, the restored data is save
 
 <br/>
 
-## Unregister Server
+<a id="unregister-server"></a>
+## Unregister Server { #unregister-server }
 
 The registered backup plan must be deleted before unregistering the server. If there is a remaining backup plan, a message will appear and unregistering will stop.
 
