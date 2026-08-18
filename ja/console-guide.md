@@ -75,7 +75,7 @@ tcbackup install {user-domain}
 
 * **Windows**
 
-Windows用エージェントは、[NHN Cloudのダウンロードページ](https://docs.toast.com/ja/Download)からダウンロードしてインストールします。インストール中、 MC ServerとMC Domain情報を入力する必要があります。MC Domainはユーザーのドメイン情報です。MC Serverには次の情報を入力します。
+Windows用エージェントは、[NHN Cloudのダウンロードページ](https://docs.nhncloud.com/ja/Download)からダウンロードしてインストールします。インストール中、 MC ServerとMC Domain情報を入力する必要があります。MC Domainはユーザーのドメイン情報です。MC Serverには次の情報を入力します。
 
 | リージョン | MC Server |
 | --- | --- |
