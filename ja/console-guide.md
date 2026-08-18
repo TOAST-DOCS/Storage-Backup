@@ -1,6 +1,10 @@
-## Storage > Backup > コンソール使用ガイド
+<!-- pre-align:aligned sig=bccd9bb799be -->
 
-## バックアップエージェント(agent)
+<a id="storage-backup-console-guide"></a>
+## Storage > Backup > コンソール使用ガイド { #storage-backup-console-guide }
+
+<a id="backup-agent"></a>
+## バックアップエージェント(agent) { #backup-agent }
 バックアップするサーバーを登録するには、まず対象のサーバーにエージェント(agent)をインストールする必要があります。エージェントをインストールする時は、ユーザーのドメイン情報が必要です。 ドメイン情報は**サーバー登録** ページで確認できます。
 
 * ユーザーのドメイン
@@ -15,7 +19,8 @@
 
 <br/>
 
-### サーバーセキュリティーグループ(security group)設定
+<a id="security-group-configuration"></a>
+### サーバーセキュリティーグループ(security group)設定 { #security-group-configuration }
 
 バックアップサーバーと通信するには、サーバーセキュリティーグループに下記の内容を追加します。
 
@@ -32,7 +37,8 @@
 
 <br/>
 
-### バックアップCLIのインストール
+<a id="install-backup-cli"></a>
+### バックアップCLIのインストール { #install-backup-cli }
 
 * **Linux**
 
@@ -49,7 +55,8 @@ curl {URL} | bash
 
 <br/>
 
-### バックアップエージェントのインストール
+<a id="install-backup-agent"></a>
+### バックアップエージェントのインストール { #install-backup-agent }
 
 > [注意]
 > バックアップは、エージェントがインストールされたサーバーのホスト名でサーバーを登録します。
@@ -68,7 +75,7 @@ tcbackup install {user-domain}
 
 * **Windows**
 
-Windows用エージェントは、[NHN Cloudのダウンロードページ](https://docs.toast.com/ja/Download)からダウンロードしてインストールします。インストール中、 MC ServerとMC Domain情報を入力する必要があります。MC Domainはユーザーのドメイン情報です。MC Serverには次の情報を入力します。
+Windows用エージェントは、[NHN Cloudのダウンロードページ](https://docs.nhncloud.com/ja/Download)からダウンロードしてインストールします。インストール中、 MC ServerとMC Domain情報を入力する必要があります。MC Domainはユーザーのドメイン情報です。MC Serverには次の情報を入力します。
 
 | リージョン | MC Server |
 | --- | --- |
@@ -80,7 +87,8 @@ Windows用エージェントは、[NHN Cloudのダウンロードページ](http
 <br/>
 
 
-### バックアップエージェントの再登録
+<a id="re-register-backup-agent"></a>
+### バックアップエージェントの再登録 { #re-register-backup-agent }
 バックアップするサーバーのホスト名が変更された場合、エージェントを再び登録する必要があります。再登録コマンドは次のとおりです。
 
 * **Linux**
@@ -100,7 +108,8 @@ tcbackup re-register
 
 <br/>
 
-### バックアップエージェントの終了
+<a id="close-backup-agent"></a>
+### バックアップエージェントの終了 { #close-backup-agent }
 しばらくバックアップを中断したい時はエージェントを終了できます。
 
 * **Linux**
@@ -117,7 +126,8 @@ tcbackup stop
 
 <br/>
 
-### バックアップエージェントの再起動
+<a id="restart-backup-agent"></a>
+### バックアップエージェントの再起動 { #restart-backup-agent }
 終了したバックアップエージェントを再び起動するには次のコマンドを使用します。
 
 * **Linux**
@@ -134,13 +144,15 @@ tcbackup restart
 
 <br/>
 
-## サーバーの登録
+<a id="register-server"></a>
+## サーバーの登録 { #register-server }
 バックアップするサーバーにエージェントをインストールすると、**サーバー登録**画面の **サーバー選択**項目でエージェントが登録されたサーバーのホスト名を選択できます。すでに登録したサーバーは選択リストから除外されます。
 
 <br/>
 
 
-### バックアップ計画の追加
+<a id="add-backup-plan"></a>
+### バックアップ計画の追加 { #add-backup-plan }
 1つのサーバーに複数のバックアップ計画を追加できます。バックアップ計画の追加は、サーバー登録が完了した後にも行えます。
 
 > [注意]
@@ -180,12 +192,14 @@ Linux   :   /home/backup
 
 <br/>
 
-### バックアップ計画のリスト
+<a id="backup-plan-list"></a>
+### バックアップ計画のリスト { #backup-plan-list }
 サーバーリストでサーバー名の左にあるチェックボックスを選択すると、画面下の詳細画面に、選択したサーバーのバックアップ計画リストが表示されます。
 
 <br/>
 
-### バックアップ結果と照会
+<a id="retrieve-results"></a>
+### バックアップ結果と照会 { #retrieve-results }
 バックアップ計画リストからバックアップパスをクリックすると、バックアップ結果を照会できます。バックアップ結果は、バックアップ完了時刻から最長1時間以内に集計されます。
 
 | バックアップ結果 | 意味 |
@@ -200,13 +214,15 @@ Linux   :   /home/backup
 
 <br/>
 
-### バックアップポリシーの変更
+<a id="change-of-backup-policy"></a>
+### バックアップポリシーの変更 { #change-of-backup-policy }
 
 バックアップ計画リストから各項目の右にある**変更** ボタンをクリックすると、バックアップポリシーを変更できます。変更できる項目は`バックアップ周期`、 `バックアップ時刻`、 `保管周期`です。
 
 <br/>
 
-## 復旧
+<a id="restoration"></a>
+## 復旧 { #restoration }
 登録したバックアップ計画が1回以上バックアップされると、バックアップ結果が生成され、生成されたバックアップ結果の中から1つを選択して復元を実行できます。
 
 * **バックアップパス**
@@ -229,7 +245,8 @@ Linux   :   /home/backup
 
 <br/>
 
-## サーバー登録の解除
+<a id="unregister-server"></a>
+## サーバー登録の解除 { #unregister-server }
 サーバー登録を解除する前に、必ず登録したバックアップ計画を削除する必要があります。バックアップ計画が残っている場合、案内メッセージが表示され、解除が中断されます。
 
 > [注意]

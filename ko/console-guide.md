@@ -1,6 +1,10 @@
-## Storage > Backup > 콘솔 사용 가이드
+<!-- pre-align:aligned sig=bccd9bb799be -->
 
-## 백업 에이전트(agent)
+<a id="storage-backup-console-guide"></a>
+## Storage > Backup > 콘솔 사용 가이드 { #storage-backup-console-guide }
+
+<a id="backup-agent"></a>
+## 백업 에이전트(agent) { #backup-agent }
 백업할 서버를 등록하려면 먼저 대상 서버에 에이전트(agent)를 설치해야 합니다. 에이전트를 설치할 때는 사용자의 도메인 정보가 필요합니다. 도메인 정보는 **서버 등록** 페이지에서 확인할 수 있습니다.
 
 * 사용자 도메인
@@ -15,7 +19,8 @@
 
 <br/>
 
-### 서버 보안 그룹(security group) 설정
+<a id="security-group-configuration"></a>
+### 서버 보안 그룹(security group) 설정 { #security-group-configuration }
 
 백업 서버와 통신하려면 서버 보안 그룹에 아래 내용을 추가합니다.
 
@@ -32,7 +37,8 @@
 
 <br/>
 
-### 백업 CLI 설치
+<a id="install-backup-cli"></a>
+### 백업 CLI 설치 { #install-backup-cli }
 
 * **Linux**
 
@@ -49,7 +55,8 @@ curl {URL} | bash
 
 <br/>
 
-### 백업 에이전트 설치
+<a id="install-backup-agent"></a>
+### 백업 에이전트 설치 { #install-backup-agent }
 
 > [주의]
 > 백업은 에이전트가 설치된 서버의 호스트 이름으로 서버를 등록합니다.
@@ -68,7 +75,7 @@ tcbackup install {user-domain}
 
 * **Windows**
 
-Windows용 에이전트는 [NHN Cloud의 다운로드 페이지](https://docs.toast.com/ko/Download)에서 다운로드해 설치합니다. 설치 중 MC Server와 MC Domain 정보를 입력해야 합니다. MC Domain은 사용자의 도메인 정보입니다. MC Server에는 다음 정보를 입력합니다.
+Windows용 에이전트는 [NHN Cloud의 다운로드 페이지](https://docs.nhncloud.com/ko/Download)에서 다운로드해 설치합니다. 설치 중 MC Server와 MC Domain 정보를 입력해야 합니다. MC Domain은 사용자의 도메인 정보입니다. MC Server에는 다음 정보를 입력합니다.
 
 | 리전 | MC Server |
 | --- | --- |
@@ -80,7 +87,8 @@ Windows용 에이전트는 [NHN Cloud의 다운로드 페이지](https://docs.to
 <br/>
 
 
-### 백업 에이전트 재등록
+<a id="re-register-backup-agent"></a>
+### 백업 에이전트 재등록 { #re-register-backup-agent }
 백업할 서버의 호스트명이 변경되었다면 에이전트를 다시 등록해야 합니다. 재등록 명령은 다음과 같습니다.
 
 * **Linux**
@@ -99,7 +107,8 @@ tcbackup re-register
 
 <br/>
 
-### 백업 에이전트 종료
+<a id="close-backup-agent"></a>
+### 백업 에이전트 종료 { #close-backup-agent }
 잠시 백업을 중단하고 싶다면 에이전트를 종료할 수 있습니다.
 
 * **Linux**
@@ -116,7 +125,8 @@ tcbackup stop
 
 <br/>
 
-### 백업 에이전트 재시작
+<a id="restart-backup-agent"></a>
+### 백업 에이전트 재시작 { #restart-backup-agent }
 종료한 백업 에이전트를 다시 시작하려면 다음 명령을 사용합니다.
 
 * **Linux**
@@ -133,11 +143,13 @@ tcbackup restart
 
 <br/>
 
-## 서버 등록
+<a id="register-server"></a>
+## 서버 등록 { #register-server }
 백업할 서버에 에이전트를 설치하면 **서버 등록** 화면의 **서버 선택** 항목에서 에이전트가 등록된 서버의 호스트 이름을 선택할 수 있습니다. 이미 등록한 서버는 선택 목록에서 제외됩니다.
 
 
-### 백업 계획 추가
+<a id="add-backup-plan"></a>
+### 백업 계획 추가 { #add-backup-plan }
 하나의 서버에 여러 개의 백업 계획을 추가할 수 있습니다. 백업 계획 추가는 서버 등록이 완료된 다음에도 할 수 있습니다.
 
 > [주의]
@@ -178,12 +190,14 @@ Linux   :   /home/backup
 
 <br/>
 
-### 백업 계획 목록
+<a id="backup-plan-list"></a>
+### 백업 계획 목록 { #backup-plan-list }
 서버 목록에서 서버 이름 왼쪽의 체크박스를 선택하면 화면 하단의 상세 화면에 선택한 서버의 백업 계획 목록이 표시됩니다.
 
 <br/>
 
-### 백업 결과 조회
+<a id="retrieve-results"></a>
+### 백업 결과 조회 { #retrieve-results }
 백업 계획 목록에서 백업 경로를 클릭하면 백업 결과를 조회할 수 있습니다. 백업 결과는 백업 완료 시각으로부터 최대 1시간 이내에 집계됩니다.
 
 | 백업 결과 | 의미 |
@@ -198,12 +212,14 @@ Linux   :   /home/backup
 
 <br/>
 
-### 백업 정책 변경
+<a id="change-of-backup-policy"></a>
+### 백업 정책 변경 { #change-of-backup-policy }
 백업 계획 목록에서 각 항목 오른쪽에 있는 **변경** 버튼을 클릭하면 백업 정책을 변경할 수 있습니다. 변경할 수 있는 항목은 `백업 주기`, `백업 시각`, `보관 주기`입니다.
 
 <br/>
 
-## 복원
+<a id="restoration"></a>
+## 복원 { #restoration }
 등록한 백업 계획이 1회 이상 수행되었다면 백업 결과가 생성되고, 생성된 백업 결과 중 하나를 선택하여 복원을 진행할 수 있습니다.
 
 <br/>
@@ -228,7 +244,8 @@ Linux   :   /home/backup
 
 <br/>
 
-## 서버 등록 해제
+<a id="unregister-server"></a>
+## 서버 등록 해제 { #unregister-server }
 서버 등록을 해제하기 전에 반드시 등록한 백업 계획을 삭제해야 합니다. 백업 계획이 남아 있다면 안내 메시지가 나타나고 해제가 중단됩니다.
 
 > [주의]

@@ -66,7 +66,7 @@ tcbackup install {user-domain}
 
 * **Windows**
 
-Windows용 에이전트는 [NHN Cloud 다운로드 페이지](https://gov-docs.toast.com/ko/Download)에서 다운로드해 설치합니다. 설치 중 MC Server와 MC Domain 정보를 입력해야 합니다. MC Domain은 사용자의 도메인 정보입니다. MC Server에는 다음 정보를 입력합니다.
+Windows용 에이전트는 [NHN Cloud 다운로드 페이지](https://docs.gov-nhncloud.com/ko/Download/)에서 다운로드해 설치합니다. 설치 중 MC Server와 MC Domain 정보를 입력해야 합니다. MC Domain은 사용자의 도메인 정보입니다. MC Server에는 다음 정보를 입력합니다.
 
 | 리전 | MC Server |
 | --- | --- |
@@ -194,6 +194,10 @@ Linux   :   /home/backup
 
 ### 소산 백업 설정
 서버 등록 시 소산 백업 수행 여부를 설정할 수 있습니다. 서버를 등록한 뒤에는 백업 서버 목록에서 서버를 선택하고 소산 백업 탭의 **소산 백업 설정 변경**을 클릭해 소산 백업 설정을 바꿀 수 있습니다.
+
+> [참고]
+> 소산 백업 결과는 백업 완료 다음 날 즉시 제공되지 않을 수 있습니다.
+> 소산 백업은 기본적으로 24시간 내에 완료되지만 내부 상황에 따라 완료까지 3~5일 정도 소요될 수 있습니다. 지연이 발생하더라도 모든 백업 데이터는 정상적으로 소산됩니다.
 
 <br/>
 

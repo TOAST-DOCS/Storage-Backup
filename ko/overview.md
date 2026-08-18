@@ -1,4 +1,7 @@
-## Storage > Backup > 개요
+<!-- pre-align:aligned sig=755f913dbd4d -->
+
+<a id="storage-backup-overview"></a>
+## Storage > Backup > 개요 { #storage-backup-overview }
 
 백업은 보안 위협, 사용자의 조작 실수, 저장 장치의 고장, 자연재해 등으로 인한 데이터 손실에 대비해 복제본을 만들고 안전하게 보관해 주는 서비스입니다. 보관한 복제본을 이용해 데이터를 복구할 수도 있습니다.
 
@@ -6,25 +9,31 @@ NHN Cloud 백업 서비스는 전체 백업 방식과 증분 백업 방식을 �
 
 NHN Cloud 백업 서비스는 간편하게 백업 정책을 등록하고, 백업 이력을 조회하고, 복구 요청을 할 수 있는 웹 콘솔 환경을 제공합니다. 백업 결과는 매일 취합되어 사용자의 메일로 보고됩니다.
 
-## 서비스 특징
+<a id="service-features"></a>
+## 서비스 특징 { #service-features }
 * 다양한 운영체제를 지원합니다.
 * 가상화 환경에 최적화되었습니다.
 * 서비스를 중단하지 않고 백업할 수 있습니다.
 * 백업 주기와 백업 시각, 보관 주기를 설정할 수 있는 사용자 정의 백업 정책을 제공합니다.
 
-### 백업 주기
+<a id="backup-cycle"></a>
+### 백업 주기 { #backup-cycle }
 1일 간격과 7일 간격을 선택할 수 있습니다.
 
-### 백업 시각
+<a id="backup-time"></a>
+### 백업 시각 { #backup-time }
 1시간 단위로 백업 시작 시각을 선택할 수 있습니다. 파일 변경이 가장 적고, 서버가 유휴 상태인 시각을 권장합니다. 실제 백업 시작은 상황에 따라 최대 1시간 정도 차이가 날 수 있습니다.
 
-### 백업 보관 주기
+<a id="retention-cycle"></a>
+### 백업 보관 주기 { #retention-cycle }
 7일, 14일, 21일, 30일, 6개월(180일), 1년(365일), 3년(1095일), 5년(1825일)의 보관 주기를 선택할 수 있습니다.
 
-### 백업 결과 조회
+<a id="view-results"></a>
+### 백업 결과 조회 { #view-results }
 사용자는 백업 완료 시각으로부터 최대 30분 이내에 웹 콘솔에서 백업 결과를 조회할 수 있습니다. 만약 백업에 실패했다면 사용자의 메일로 실패 내용이 보고됩니다. 최대 3시간 동안 백업되지 않으면 실패로 기록됩니다.
 
-## 지원하는 운영체제
+<a id="supported-operating-systems"></a>
+## 지원하는 운영체제 { #supported-operating-systems }
 NHN Cloud에서 지원하는 운영체제는 다음과 같습니다.
 
 | 운영체제 | 하드웨어 아키텍처 | 지원 버전 | 지원 구성 |
@@ -35,22 +44,28 @@ NHN Cloud에서 지원하는 운영체제는 다음과 같습니다.
 | Rocky | x64 | 8.5 | xfs |
 | Windows Server | x64 | 2012 R2 STD<br/>2016 STD<br/>2019 STD | NTFS |
 
-## 복원
+<a id="restoration"></a>
+## 복원 { #restoration }
 복원 원본 서버의 백업 결과 중 하나를 선택하여 진행합니다. 백업된 내용 전체를 복원할 수도 있고, 일부 경로를 선택하여 복원할 수도 있습니다.
 복원 대상 서버는 백업 에이전트가 설치된 서버 중 선택할 수 있으며, 복원 원본 서버와 동일한 운영체제 계열(Linux 또는 Windows)의 서버를 선택해야 합니다.
 저장 경로는 원하는 경로로 지정할 수도 있으며 입력한 경로가 존재하지 않을 경우 자동 생성 후 복원이 진행됩니다.
 
-## 과금
+<a id="charges"></a>
+## 과금 { #charges }
 서버가 등록되면 기본 월정액이 과금됩니다. 그리고 등록한 서버의 수와 스토리지 사용량, 복원한 데이터 크기에 따라 추가 요금이 부과됩니다. 월정액의 기본 제공 사양은 서버 2대, 스토리지 사용량 100GB입니다.
 
-## 참고 사항
-### 백업 소프트웨어
+<a id="reference"></a>
+## 참고 사항 { #reference }
+<a id="backup-software"></a>
+### 백업 소프트웨어 { #backup-software }
 DELL EMC AVAMAR
 
-### 백업 프로그램 설치 위치
+<a id="backup-program-installation-location"></a>
+### 백업 프로그램 설치 위치 { #backup-program-installation-location }
 * Linux : /usr/local/avamar
 * Windows : C:\Program Files\avs
 
-### 백업 프로그램 데몬(프로세스) 정보
+<a id="backup-program-daemon-process-information"></a>
+### 백업 프로그램 데몬(프로세스) 정보 { #backup-program-daemon-process-information }
 * Linux : /usr/local/avamar/bin/avagent.bin
 * Windows : Avamar Backup Client
