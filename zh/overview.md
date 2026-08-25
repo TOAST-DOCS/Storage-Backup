@@ -35,19 +35,12 @@ NHN Cloud supports the following operating systems:
 | Rocky | x64 | 8.5 | xfs |
 | Windows Server | x64 | 2012 R2 STD<br/>2016 STD<br/>2019 STD | NTFS |
 
-## Application Procedure for Restoration
-Once the user applies for restoration, the operator confirms the application and proceeds with the restoration. For smooth processing, the operator may contact you. The restoration application process is as follows:
-
-1. Select a server to restore.
-2. Click **Apply for Restoration** in the **Restoration** tab.
-3. Fill in the content and click **Apply**.
-
-If you apply for restoration, it will be completed within 3 business hours. If it is made after business hours, it will be completed the next day.
-
-Restoration is available only during business hours (10 am to 6 pm on weekdays), and the operator proceeds with the restoration after confirmation.
+## Restoration
+Restoration is performed by selecting one of the backup results. You can restore all data or choose specific paths.
+The server to store the data can be selected from the servers registered as backup agents, and the restoration path can be specified as desired.
 
 ## Charges
-When a server is registered, a basic monthly fee is charged. Additional fees are charged depending on the number of registered servers and storage usage. The default specification for the monthly subscription is two servers and 100 GB of storage usage.
+When a server is registered, a basic monthly fee is charged. Additional fees apply based on the number of registered servers, storage usage, and the size of restored data. The default specification for the monthly subscription includes two servers and 100 GB of storage usage.
 
 ## Reference
 ### Backup Software

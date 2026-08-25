@@ -1,4 +1,7 @@
-## Storage > Backup > Overview
+<!-- pre-align:aligned sig=755f913dbd4d -->
+
+<a id="storage-backup-overview"></a>
+## Storage > Backup > Overview { #storage-backup-overview }
 
 Backup is a service that makes copies and keeps them safely to prepare for data loss due to security threats, user's operational mistakes, storage device failure, natural disasters, and so on. You can also restore data using the backup copy.
 
@@ -6,25 +9,31 @@ NHN Cloud Backup service uses both full and incremental backup methods. Initiall
 
 NHN Cloud Backup service provides a web console environment where you can easily register backup policies, view backup history, and request restoration. Backup results are collected daily and reported to the user's email.
 
-## Service Features
+<a id="service-features"></a>
+## Service Features { #service-features }
 * Supports various operating systems.
 * Optimized for virtualization environment.
 * Performs backup without interrupting the service.
 * Provides a user-defined backup policy that allows you to set the backup cycle, backup time, and retention cycle.
 
-### Backup Cycle
+<a id="backup-cycle"></a>
+### Backup Cycle { #backup-cycle }
 You can choose between 1-day interval and 7-day interval.
 
-### Backup Time
+<a id="backup-time"></a>
+### Backup Time { #backup-time }
 You can select a backup start time by the hour. It is recommended to select the time when the number of file change is minimal and the server is idle. Actual backup start time may vary by up to 1 hour, depending on the situation.
 
-### Retention Cycle
+<a id="retention-cycle"></a>
+### Retention Cycle { #retention-cycle }
 You can select a retention cycle of 7 days, 14 days, 21 days, 30 days, 6 months (180 days), 1 year (365 days), 3 years (1095 days), or 5 years (1825 days).
 
-### View Results
+<a id="view-results"></a>
+### View Results { #view-results }
 Users can view backup results on the web console within 30 minutes from the backup completion time. If the backup fails, the details of failure are reported to the user's email. If the backup is not performed up to 3 hours, it is logged as a failure.
 
-## Supported Operating Systems
+<a id="supported-operating-systems"></a>
+## Supported Operating Systems { #supported-operating-systems }
 NHN Cloud supports the following operating systems:
 
 | OS | Hardware Architecture | Supported Version | Supported Configuration |
@@ -35,30 +44,28 @@ NHN Cloud supports the following operating systems:
 | Rocky | x64 | 8.5 | xfs |
 | Windows Server | x64 | 2012 R2 STD<br/>2016 STD<br/>2019 STD | NTFS |
 
-## Restoration
+<a id="restoration"></a>
+## Restoration { #restoration }
 Select one of the backup results from the original server to restore. You can restore the entire backup or select a specific path.
 The restore target server can be selected from among the servers with the backup agent installed, and must be a server with the same OS family (Linux or Windows) as the restore source server.
 You can specify the save path you want. If the entered path does not exist, it will be automatically created and then restored.
 
-1. Select a server to restore.
-2. Click **Apply for Restoration** in the **Restoration** tab.
-3. Fill in the content and click **Apply**.
+<a id="charges"></a>
+## Charges { #charges }
+When a server is registered, a basic monthly fee is charged. Additional fees apply based on the number of registered servers, storage usage, and the size of restored data. The default specification for the monthly subscription includes two servers and 100 GB of storage usage.
 
-If you apply for restoration, it will be completed within 3 business hours. If it is made after business hours, it will be completed the next day.
-
-Restoration is available only during business hours (10 am to 6 pm on weekdays), and the operator proceeds with the restoration after confirmation.
-
-## Charges
-When a server is registered, a basic monthly fee is charged. Additional fees are charged depending on the number of registered servers and storage usage. The default specification for the monthly subscription is two servers and 100 GB of storage usage.
-
-## Reference
-### Backup Software
+<a id="reference"></a>
+## Reference { #reference }
+<a id="backup-software"></a>
+### Backup Software { #backup-software }
 DELL EMC AVAMAR
 
-### Backup Program Installation Location
+<a id="backup-program-installation-location"></a>
+### Backup Program Installation Location { #backup-program-installation-location }
 * Linux : /usr/local/avamar
 * Windows : C:\Program Files\avs
 
-### Backup Program Daemon (Process) Information
+<a id="backup-program-daemon-process-information"></a>
+### Backup Program Daemon (Process) Information { #backup-program-daemon-process-information }
 * Linux : /usr/local/avamar/bin/avagent.bin
 * Windows : Avamar Backup Client
