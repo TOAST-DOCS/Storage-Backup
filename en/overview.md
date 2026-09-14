@@ -1,3 +1,5 @@
+<!-- machine_translated: true -->
+
 <!-- pre-align:aligned sig=755f913dbd4d -->
 
 <a id="storage-backup-overview"></a>
@@ -31,6 +33,8 @@ You can select a retention cycle of 7 days, 14 days, 21 days, 30 days, 6 months 
 <a id="view-results"></a>
 ### View Results { #view-results }
 Users can view backup results on the web console within 30 minutes from the backup completion time. If the backup fails, the details of failure are reported to the user's email. If the backup is not performed up to 3 hours, it is logged as a failure.
+
+Backup result emails are sent at 10:30 AM after information is collected at 10:00 AM daily. Even if a backup schedule starts before 10:00 AM, if it completes after 10:00 AM, the backup result email may not be sent on that day.
 
 <a id="supported-operating-systems"></a>
 ## Supported Operating Systems { #supported-operating-systems }
