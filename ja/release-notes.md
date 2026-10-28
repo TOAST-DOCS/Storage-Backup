@@ -1,70 +1,16 @@
-<!-- pre-align:aligned sig=6b36f02629a3 -->
+<!-- pre-align:aligned sig=a87d89c6e586 -->
 
 <a id="storage-backup-release-notes"></a>
 ## Storage > Backup > リリースノート { #storage-backup-release-notes }
 
-<a id="september-23-2025"></a>
-### 2025. 09. 23. { #september-23-2025 }
-<a id="september-23-2025-feature-updates"></a>
-#### 機能変更
-* バックアップ復元機能を自動化に変更
-    * 日本(東京)リージョン除外
+{% include-markdown './release-notes/2025.md' %}
 
-<a id="february-11-2025"></a>
-### 2025. 02. 11. { #february-11-2025 }
-<a id="february-11-2025-added-features"></a>
-#### 機能追加
-* バックアップ計画に保管周期3か月(90日)選択項目を追加
-    * 日本(東京)リージョン除外
+{% include-markdown './release-notes/2024.md' %}
 
-<a id="july-23-2024"></a>
-### 2024. 07. 23. { #july-23-2024 }
-<a id="july-23-2024-added-features"></a>
-#### 機能追加
-* 全バックアップファイルリストのダウンロード機能を追加
-    * 日本(東京)リージョンを除く
+{% include-markdown './release-notes/2023.md' %}
 
-<a id="february-27-2024"></a>
-### 2024. 02. 27. { #february-27-2024 }
+{% include-markdown './release-notes/2020.md' %}
 
-<a id="february-27-2024-added-features"></a>
-#### 機能追加
+{% include-markdown './release-notes/2019.md' %}
 
-* 通知メール受信対象設定機能を追加
-    * 組織/プロジェクトダッシュボード > 通知管理で、受信メールのアドレス名を設定できる機能が追加されました。
-    * 日本(東京)リージョンを除く
-
-<a id="november-28-2023"></a>
-### 2023. 11. 28. { #november-28-2023 }
-<a id="november-28-2023-added-features"></a>
-#### 機能追加
-* バックアップ計画の停止/再開機能を追加
-    * 日本(東京)リージョンを除く
-<a id="november-28-2023-feature-updates"></a>
-#### 機能変更
-* バックアップ結果照会の改善
-    * コンソールでバックアップパス内のフォルダおよびファイルなどのバックアップ履歴を確認可能
-    * 日本(東京)リージョンを除く
-
-<a id="october-31-2023"></a>
-### 2023. 10. 31. { #october-31-2023 }
-<a id="october-31-2023-feature-updates"></a>
-#### 機能変更
-* バックアップ結果メール送信先の変更
-    * 変更前
-        * プロジェクトに権限があるすべてのプロジェクトメンバー
-    * 変更後
-        * プロジェクト権限のうち、Backup Admin権限を持つプロジェクトメンバー
-    * 日本(東京)リージョンを除く
-
-<a id="august-25-2020"></a>
-### 2020. 08. 25. { #august-25-2020 }
-* 韓国(ピョンチョン)リージョンオープン
-
-<a id="may-14-2019"></a>
-### 2019. 05. 14. { #may-14-2019 }
-* 日本(東京)リージョンオープン
-
-<a id="february-22-2018"></a>
-### 2018. 02. 22. { #february-22-2018 }
-* 新サービスリリース
+{% include-markdown './release-notes/2018.md' %}
